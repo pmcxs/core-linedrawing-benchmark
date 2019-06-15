@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="1.0.0-dev002737" />
+    <PackageReference Include="System.Drawing.Common" Version="4.6.0-preview5.19224.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ImageSharpCustomDrawing\ImageSharpCustomDrawing.csproj" />
+  </ItemGroup>
+
+</Project>
