@@ -16,19 +16,21 @@ namespace CoreLineDrawingBenchmark
     {
         static void Main(string[] args)
         {
-            DrawLinesAndMeasure(imageSize: 1000, numberOfLines: 10, lineWidth: 1);
-            DrawLinesAndMeasure(imageSize: 1000, numberOfLines: 100, lineWidth: 1);
-            DrawLinesAndMeasure(imageSize: 1000, numberOfLines: 1000, lineWidth: 1);
-            DrawLinesAndMeasure(imageSize:1000, numberOfLines:10, lineWidth:5);
-            DrawLinesAndMeasure(imageSize:1000, numberOfLines:100, lineWidth:5);
-            DrawLinesAndMeasure(imageSize:1000, numberOfLines:1000, lineWidth:5);
-            DrawLinesAndMeasure(imageSize:1000, numberOfLines:10, lineWidth:10);
-            DrawLinesAndMeasure(imageSize:1000, numberOfLines:100, lineWidth:10);
-            DrawLinesAndMeasure(imageSize:1000, numberOfLines:1000, lineWidth:10);
+            DrawLinesAndMeasure(imageSize: 500, numberOfLines: 10, lineWidth: 1);
+            DrawLinesAndMeasure(imageSize: 500, numberOfLines: 100, lineWidth: 1);
+            DrawLinesAndMeasure(imageSize: 500, numberOfLines: 1000, lineWidth: 1);
+            DrawLinesAndMeasure(imageSize: 500, numberOfLines:10, lineWidth:5);
+            DrawLinesAndMeasure(imageSize: 500, numberOfLines:100, lineWidth:5);
+            DrawLinesAndMeasure(imageSize: 500, numberOfLines:1000, lineWidth:5);
+            DrawLinesAndMeasure(imageSize: 500, numberOfLines:10, lineWidth:10);
+            DrawLinesAndMeasure(imageSize: 500, numberOfLines:100, lineWidth:10);
+            DrawLinesAndMeasure(imageSize: 500, numberOfLines:1000, lineWidth:10);
         }
 
         private static void DrawLinesAndMeasure(int imageSize, int numberOfLines, int lineWidth)
         {
+            Console.WriteLine($"Running tests for Image Size: {imageSize}  Number of Lines: {numberOfLines}  Line Width: {lineWidth}");
+
             var lines = new List<int[]>();
             var rnd = new Random(1);
 
